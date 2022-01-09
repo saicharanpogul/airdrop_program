@@ -1,0 +1,20 @@
+{
+  "name": "airdrop_program",
+  "version": "1.0.0",
+  "description": "Solana Airdrop Program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Saicharan Pogul",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@solana/web3.js": "^1.31.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "color-log": "github:saicharanpogul/color-log"
+  }
+}
