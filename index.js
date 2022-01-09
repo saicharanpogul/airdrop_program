@@ -38,11 +38,11 @@ const getWalletBalance = async () => {
 getWalletBalance();
 
 const airDropSol = async () => {
-  const airdropSig = await connection.requestAirdrop(wallet.publicKey, 2 * LAMPORTS_PER_SOL);
-  console.log.warn('Airdropping 2 SOL...');
-  await connection.confirmTransaction(airdropSig);
-  console.log.success('Airdrop complete');
   try {
+    const airdropSig = await connection.requestAirdrop(wallet.publicKey, 2 * LAMPORTS_PER_SOL);
+    console.log.warn('Airdropping 2 SOL...');
+    await connection.confirmTransaction(airdropSig);
+    console.log.success('Airdrop complete');
   } catch (err) {
     console.log.error(err);
   }
